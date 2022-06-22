@@ -4,6 +4,8 @@ require('./db/Config')
 const User = require('./db/User')
 const Product = require('./db/Product')
 const app = express()
+const dotenv = require("dotenv")
+dotenv.config()
 
 app.use(express.json());
 app.use(cors())
